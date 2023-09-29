@@ -1,12 +1,12 @@
-import React, { useState } from "react";
 import "./new.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
+import { useState } from "react";
 
 const New = ({ inputs, title }) => {
   const [file, setFile] = useState("");
-  // console.log(file);
+
   return (
     <div className="new">
       <Sidebar />
@@ -30,8 +30,7 @@ const New = ({ inputs, title }) => {
             <form>
               <div className="formInput">
                 <label htmlFor="file">
-                  Image
-                  <DriveFolderUploadOutlinedIcon className="icon" />
+                  Image: <DriveFolderUploadOutlinedIcon className="icon" />
                 </label>
                 <input
                   type="file"
